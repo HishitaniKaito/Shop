@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Gamemanager : MonoBehaviour
 {
+    int[] _price;
+    int[] _item;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,12 @@ public class Gamemanager : MonoBehaviour
     {
         
     }
-    public void buy()
+    public void buy(string _name)
+    {
+
+    }
+
+    public void use()
     {
 
     }
