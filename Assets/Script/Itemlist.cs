@@ -5,7 +5,7 @@ using UnityEngine;
 public class Itemlist : MonoBehaviour
 {
     Gamemanager _gm;
-    [SerializeField] GameObject _itembutton;
+    [SerializeField] ItemText _itembutton;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,15 +27,19 @@ public class Itemlist : MonoBehaviour
                 switch (i)
                 {
                     case 0:
-
+                        x.TextWrite("‚â‚­‚»‚¤",_gm._item[i]);
                         break;
                     case 1:
+                        x.TextWrite("‚Ç‚­‚¯‚µ‚»‚¤", _gm._item[i]);
                         break;
                     case 2:
+                        x.TextWrite("‚¹‚¢‚·‚¢", _gm._item[i]);
                         break;
                     case 3:
+                        x.TextWrite("‚Â‚é‚¬", _gm._item[i]);
                         break;
                     case 4:
+                        x.TextWrite("‚æ‚ë‚¢", _gm._item[i]);
                         break;
                 }
             }
