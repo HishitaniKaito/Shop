@@ -11,7 +11,7 @@ public class Gamemanager : MonoBehaviour
     void Start()
     {
         _price = new int[]{100,50,200,500,700};
-        _item = new int[] { 0, 0, 0, 0, 0 };
+        _item = new int[]{ 0, 0, 0, 0, 0 };
     }
 
     // Update is called once per frame

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemList : MonoBehaviour
 {
     Gamemanager _gm;
+    [SerializeField] GameObject _itembutton;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,9 +23,11 @@ public class ItemList : MonoBehaviour
         {
             if(_gm._item[i] > 0)
             {
-                switch(i)
+                var x = Instantiate(_itembutton);
+                switch (i)
                 {
                     case 0:
+
                         break;
                     case 1:
                         break;
